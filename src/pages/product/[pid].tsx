@@ -3,11 +3,11 @@ import { useState } from "react";
 
 import Breadcrumb from "@/components/breadcrumb";
 import Footer from "@/components/footer";
-import Content from "@/components/product-single/content";
-import Description from "@/components/product-single/description";
-import Gallery from "@/components/product-single/gallery";
-import Reviews from "@/components/product-single/reviews";
-import ProductsFeatured from "@/components/products-featured";
+import Home from "@/components/home";
+import Content from "@/components/products/product-single/content";
+import Description from "@/components/products/product-single/description";
+import Gallery from "@/components/products/product-single/gallery";
+import Reviews from "@/components/products/product-single/reviews";
 // types
 import type { ProductType } from "@/types";
 
@@ -69,7 +69,7 @@ const Product = ({ product }: ProductPageType) => {
       </section>
 
       <div className="product-single-page">
-        <ProductsFeatured />
+        <Home />
       </div>
       <Footer />
     </Layout>

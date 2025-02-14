@@ -1,10 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
-import { useSelector } from "react-redux";
 import useOnClickOutside from "use-onclickoutside";
-
-import type { RootState } from "@/store";
 
 import Logo from "../../assets/icons/logo";
 
@@ -14,7 +11,6 @@ type HeaderType = {
 
 const Header = ({ isErrorPage }: HeaderType) => {
   const router = useRouter();
-  const { cartItems } = useSelector((state: RootState) => state.cart);
   const arrayPaths = ["/"];
 
   const [onTop, setOnTop] = useState(
@@ -42,7 +38,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
     window.onscroll = function () {
       headerClass();
     };
-  }, []);
+  }, [arrayPaths, isErrorPage, router.pathname]);
 
   const closeMenu = () => {
     setMenuOpen(false);
@@ -62,16 +58,15 @@ const Header = ({ isErrorPage }: HeaderType) => {
         <Link href="/">
           <h1 className="site-logo">
             <Logo />
-            E-Shop
+            Home
           </h1>
         </Link>
         <nav
           ref={navRef}
           className={`site-nav ${menuOpen ? "site-nav--open" : ""}`}
         >
+          <Link href="/projects">Projects</Link>
           <Link href="/products">Products</Link>
-          <a href="#">Inspiration</a>
-          <a href="#">Rooms</a>
           <button className="site-nav__btn">
             <p>Account</p>
           </button>
@@ -98,15 +93,7 @@ const Header = ({ isErrorPage }: HeaderType) => {
               className="icon-search"
             />
           </button>
-          <Link href="/cart" legacyBehavior>
-            <button className="btn-cart">
-              <i className="icon-cart" />
-              {cartItems.length > 0 && (
-                <span className="btn-cart__count">{cartItems.length}</span>
-              )}
-            </button>
-          </Link>
-          <Link href="/login" legacyBehavior>
+          <Link href="#" legacyBehavior>
             <button className="site-header__btn-avatar">
               <i className="icon-avatar" />
             </button>

@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import productsTypes from "../../../utils/data/products-types";
 import List from "./list";
 
 const ProductsContent = () => {
@@ -8,9 +9,7 @@ const ProductsContent = () => {
   return (
     <section className="products-content">
       <div className="products-content__intro">
-        <h2>
-          Men's Tops <span>(133)</span>
-        </h2>
+        <h2>Products</h2>
         <button
           type="button"
           onClick={() => setOrderProductsOpen(!orderProductsOpen)}
@@ -25,15 +24,9 @@ const ProductsContent = () => {
             <h4>Show products: </h4>
             <div className="select-wrapper">
               <select>
-                <option>Popular</option>
-              </select>
-            </div>
-          </div>
-          <div className="products__filter__select">
-            <h4>Sort by: </h4>
-            <div className="select-wrapper">
-              <select>
-                <option>Popular</option>
+                {productsTypes.map((type) => (
+                  <option key={type.id} label={type.name} />
+                ))}
               </select>
             </div>
           </div>

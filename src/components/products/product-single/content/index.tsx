@@ -7,8 +7,8 @@ import { addProduct } from "@/store/reducers/cart";
 import { toggleFavProduct } from "@/store/reducers/user";
 import type { ProductStoreType, ProductType } from "@/types";
 
-import productsColors from "../../../utils/data/products-colors";
-import productsSizes from "../../../utils/data/products-sizes";
+import productsColors from "../../../../utils/data/products-colors";
+import productsSizes from "../../../../utils/data/products-sizes";
 import CheckboxColor from "../../products-filter/form-builder/checkbox-color";
 
 type ProductContent = {

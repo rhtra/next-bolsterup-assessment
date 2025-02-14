@@ -6,13 +6,13 @@ import type { RootState } from "@/store";
 import { toggleFavProduct } from "@/store/reducers/user";
 import type { ProductTypeList } from "@/types";
 
-const ProductItem = ({
+const ProjectItem = ({
   discount,
   images,
   id,
+  category,
   name,
-  price,
-  currentPrice,
+  company,
 }: ProductTypeList) => {
   const dispatch = useDispatch();
   const { favProducts } = useSelector((state: RootState) => state.user);
@@ -33,7 +33,14 @@ const ProductItem = ({
         <button
           type="button"
           onClick={toggleFav}
-          className={`btn-heart ${isFavourite ? "btn-heart--active" : ""}`}
+          className={`btn-heart btn-share ${isFavourite ? "btn-heart--active" : ""}`}
+        >
+          <i className="icon-send" />
+        </button>
+        <button
+          type="button"
+          onClick={toggleFav}
+          className={`btn-heart btn-heart-project ${isFavourite ? "btn-heart--active" : ""}`}
         >
           <i className="icon-heart" />
         </button>
@@ -44,17 +51,16 @@ const ProductItem = ({
         </Link>
       </div>
       <div className="product__description">
+        <span className="product__category">{category}</span>
         <h3>{name}</h3>
         <div
           className={`product__price ${discount ? "product__price--discount" : ""}`}
         >
-          <h4>${currentPrice}</h4>
-
-          {discount && <span>${price}</span>}
+          <h4>{company}</h4>
         </div>
       </div>
     </div>
   );
 };
 
-export default ProductItem;
+export default ProjectItem;

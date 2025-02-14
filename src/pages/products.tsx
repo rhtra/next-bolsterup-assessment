@@ -1,13 +1,13 @@
 import Breadcrumb from "@/components/breadcrumb";
 import Footer from "@/components/footer";
-import ProductsContent from "@/components/products-content";
-import ProductsFilter from "@/components/products-filter";
+import ProductsContent from "@/components/products/products-content";
+import ProductsFilter from "@/components/products/products-filter";
 
 import Layout from "../layouts/Main";
 
 const Products = () => (
   <Layout>
-    <Breadcrumb />
+    <Breadcrumb label="Products" />
     <section className="products-page">
       <div className="container">
         <ProductsFilter />

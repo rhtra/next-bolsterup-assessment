@@ -1,4 +1,6 @@
-const Breadcrumb = () => (
+import type { BreadCrumb } from "@/types";
+
+const Breadcrumb = ({ label }: BreadCrumb) => (
   <section className="breadcrumb">
     <div className="container">
       <ul className="breadcrumb-list">
@@ -7,7 +9,7 @@ const Breadcrumb = () => (
             <i className="icon-home" />
           </a>
         </li>
-        <li>All Products</li>
+        <li>All {label}</li>
       </ul>
     </div>
   </section>

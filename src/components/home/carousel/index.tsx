@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import type { ProductTypeList } from "@/types";
 
-import ProductItem from "../../product-item";
+import ProductItem from "../../products/product-item";
 
 let slidesPerView = 1.3;
 let centeredSlides = true;

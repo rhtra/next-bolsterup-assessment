@@ -1,34 +1,36 @@
-export const productsColors = [
+export const productsBrands = [
   {
     id: "1",
-    label: "Black",
-    color: "#000000",
+    name: "Cemex",
   },
   {
     id: "2",
-    label: "Brown",
-    color: "#6F3E18",
+    name: "Vulcan",
   },
   {
     id: "3",
-    label: "Yellow",
-    color: "#D4BE8D",
+    name: "All Home",
   },
   {
     id: "4",
-    label: "Gray",
-    color: "#838383",
+    name: "RPM",
   },
   {
     id: "5",
-    label: "White",
-    color: "#F3F3F3",
+    name: "ABC",
   },
   {
     id: "6",
-    label: "Blue",
-    color: "#0F73AD",
+    name: "CJC",
+  },
+  {
+    id: "7",
+    name: "VDeo",
+  },
+  {
+    id: "8",
+    name: "Alair",
   },
 ];
 
-export default productsColors;
+export default productsBrands;
