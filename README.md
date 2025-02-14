@@ -22,4 +22,4 @@ Available routes:
 <img width="1437" alt="Screenshot 2025-02-14 at 11 13 12 AM" src="https://github.com/user-attachments/assets/894d4891-1eda-425f-9636-d7960fc4f0d7" />
 <img width="1438" alt="Screenshot 2025-02-14 at 11 13 04 AM" src="https://github.com/user-attachments/assets/e4bb80d8-e3ac-49aa-8cb7-6dc10a53f5a5" />
 <img width="590" alt="Screenshot 2025-02-14 at 10 18 38 AM" src="https://github.com/user-attachments/assets/0a61c7ba-3ecc-44c1-b2d4-c033f6126a6b" />
-![Uploading Screenshot 2025-02-14 at 11.13.53 AM.png…]()
+
