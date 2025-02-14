@@ -6,14 +6,16 @@ npm run start
 Steps left:
 1. Functionality on filters
 2. Cleanup
-3. 
+   
 Available routes: 
-1.. http://localhost:3000
-4. http://localhost:3000/products
-5. http://localhost:3000/projects
-6. http://localhost:3000/login
-7. http://localhost:3000/register
-8. http://localhost:3000/forgot-password
+1. http://localhost:3000
+2. http://localhost:3000/products
+3. http://localhost:3000/projects
+4. http://localhost:3000/login
+5. http://localhost:3000/register
+6. http://localhost:3000/forgot-password
+
+   
 <img width="1439" alt="Screenshot 2025-02-14 at 11 13 44 AM" src="https://github.com/user-attachments/assets/a85709ec-c738-4788-8b16-33be8f83054d" />
 <img width="1439" alt="Screenshot 2025-02-14 at 11 13 30 AM" src="https://github.com/user-attachments/assets/8ed7d01e-f4a0-4d60-b939-7f2defe6ce2d" />
 <img width="1439" alt="Screenshot 2025-02-14 at 11 13 19 AM" src="https://github.com/user-attachments/assets/d0ce81ee-187e-4c40-b030-48783c6fece9" />
