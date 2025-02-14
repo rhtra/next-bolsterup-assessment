@@ -1,44 +1,23 @@
-# Comming soon
+Assessment for Bolsterup
 
-I know it's been a while since I updated this repo, but hopefully in the next months I can add more features on the project.
-Thanks everyone who gave a star and forked it 🫶
+npm install
+npm run start
 
-# Next.js Ecommerce
-
-This repo contains a work in progress Ecommerce responsive made with Next.js, Redux, Redux-persist, Hooks, SCSS and BEM. If you like it please give it a star :)
-
-## Getting started
-
-It's easy to have it running locally.
-Just do a `yarn install` to install the dependencies.
-Then do a `yarn dev` to run it locally.
-
-## Backend
-
-The backend of the project it's only mocked data. You can find them in `utils/data`.
-The API is being handled by Next API routes.
-
-## Design
-
-[This](https://www.xdguru.com/free-xd-ecommerce-ui-kit-by-iceo/) is the design of the project.
-
-## Available pages
-
-- Home page: /
-- Products page: /products
-- Product single page: /product/1
-- Cart page: /cart
-- Login page: /login
-- Register page: /register
-- 404 page: /page-not-found
-
-## Screenshots
-
-![Next Ecommerce screenshot](https://lucaspulliese.com/wp-content/uploads/2020/09/ecommerce-1.jpg)
-
-![Next Ecommerce screenshot](https://lucaspulliese.com/wp-content/uploads/2020/09/ecommerce-2.jpg)
-
-## New features added - Nov 2024
-
-- Updated Next version.
-- Added eslint config.
+Steps left:
+1. Functionality on filters
+2. Cleanup
+3. 
+Available routes: 
+1.. http://localhost:3000
+4. http://localhost:3000/products
+5. http://localhost:3000/projects
+6. http://localhost:3000/login
+7. http://localhost:3000/register
+8. http://localhost:3000/forgot-password
+<img width="1439" alt="Screenshot 2025-02-14 at 11 13 44 AM" src="https://github.com/user-attachments/assets/a85709ec-c738-4788-8b16-33be8f83054d" />
+<img width="1439" alt="Screenshot 2025-02-14 at 11 13 30 AM" src="https://github.com/user-attachments/assets/8ed7d01e-f4a0-4d60-b939-7f2defe6ce2d" />
+<img width="1439" alt="Screenshot 2025-02-14 at 11 13 19 AM" src="https://github.com/user-attachments/assets/d0ce81ee-187e-4c40-b030-48783c6fece9" />
+<img width="1437" alt="Screenshot 2025-02-14 at 11 13 12 AM" src="https://github.com/user-attachments/assets/894d4891-1eda-425f-9636-d7960fc4f0d7" />
+<img width="1438" alt="Screenshot 2025-02-14 at 11 13 04 AM" src="https://github.com/user-attachments/assets/e4bb80d8-e3ac-49aa-8cb7-6dc10a53f5a5" />
+<img width="590" alt="Screenshot 2025-02-14 at 10 18 38 AM" src="https://github.com/user-attachments/assets/0a61c7ba-3ecc-44c1-b2d4-c033f6126a6b" />
+![Uploading Screenshot 2025-02-14 at 11.13.53 AM.png…]()
